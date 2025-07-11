@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18B54239-D6FC-440E-8959-57622762428B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PROJECTILE</RootNamespace>
+    <AssemblyName>PROJECTILE</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chrt1.cs" />
+    <Compile Include="circular button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="circular pictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Plus de Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plus de Details.Designer.cs">
+      <DependentUpon>Plus de Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graphs.Designer.cs">
+      <DependentUpon>Graphs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="More Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="More Details.Designer.cs">
+      <DependentUpon>More Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="PROJECTILE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PROJECTILE.Designer.cs">
+      <DependentUpon>PROJECTILE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Plus de Details.resx">
+      <DependentUpon>Plus de Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graphs.resx">
+      <DependentUpon>Graphs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="More Details.resx">
+      <DependentUpon>More Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PROJECTILE.resx">
+      <DependentUpon>PROJECTILE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chronometre.jpgm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neptune 2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neptune.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saturne 2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saturne.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terre 2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terre.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uranus 2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uranus.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venus .jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venus 2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jupiter 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jupiter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercure 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercure.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lune 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lune.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mars 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mars.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lune 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outJupiter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outLune.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outMars.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outNeptune.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outSaturn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outTerre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outUranus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outVenus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outMercure.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outtLune.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outLLune.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planetes.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jupiter %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jupiter %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jupiter%283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\les planetes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lune%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lune%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lune%283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mars%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mars%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mars%283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mercure%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mercure%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mercure%283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neptune%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neptune%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neptune%283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saturne%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saturne%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saturne%283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terre%283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uranus%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uranus%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uranus%283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Venus%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Venus%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venus%283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feu transparent.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\projectile2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shouter.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shouterr.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shouter terre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-play-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop 2 icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop3 icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terre rocks.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gif explosion.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
